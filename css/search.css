@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  @font-face {
+    font-family: Yekan;
+    src: url("../fonts/BYekan.ttf") format("ttf");
+    src: url("../fonts/BYekan.woff") format("woff");
+    src: url("../fonts/BYekan.woff2") format("woff2");
+    font-weight: normal;
+}س
+  body{
+      margin: 0;
+      background-color: whitesmoke;
+      font-family: 'Vazir', Arial, sans-serif;
+      font-weight:normal;
+  }
+  /*header*/
+.myheader{
+    display: flex;
+    justify-self: start;
+    position: relative;
+}
+.logo  img{
+    position: absolute;
+    top: -9px;
+    right: 1%;
+}
+.parent{
+  display: flex;
+  justify-content: left;
+  align-content: center;
+}
+.menu-toggler, .icon{
+    padding: 0.5rem;
+    color: rgb(182, 175, 175);
+    font-size: medium;
+}
+.menu{
+  display: flex;
+  justify-content: right;
+  align-content: center;
+  position: absolute;
+  right: 20%;
+  list-style: none;
+}
+.menu li{
+  color:rgb(182, 175, 175);
+  text-decoration: none;
+  list-style: none;
+  padding: 0 0.2rem;
+  margin-left: 1rem;
+}
+a{
+  text-decoration: none;
+}
+/*main*/
+.mymain{
+  width: 100%;;
+}
+.mysearch{
+  width: 100%;
+  background-color: #fbffff;
+  padding: 2rem;
+}
+#search-form{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#search-form select{
+  background-color: white;
+  width: 8rem;
+  border: none;
+}
+#search-form .btn3{
+  background-color: #39b8c0;
+  padding: 0.5rem;
+  border-radius: 2rem;
+  border: none;
+
+}
+/*grid-container*/
+.item1 { grid-area: a; }
+.item2 { grid-area: b; }
+.item3 { grid-area: c; }
+.item4 { grid-area: d; }
+.item5 { grid-area: e; }
+.item6{ grid-area: f; }
+.item7 { grid-area: j; }
+.item8{ grid-area: h; }
+.item9 { grid-area: i; }
+.item10 { grid-area: l; }
+
+.grid-container {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-areas:
+    'a b c d'
+    'a e c f'
+    'j j c h'
+    'i l c h';
+  grid-gap: 10px;
+  padding: 10px;
+}
+.grid-container > div {
+  border-radius: 0.5rem;
+  padding: 2rem 0;
+}
+.grid-container  div:hover{
+    transform: scale(1.1);
+    opacity: 1s;
+}
+.grid-container .item1{
+  background: url(../images/item1.png) no-repeat center center/cover;
+}
+.grid-container .item2{
+  background: url(../images/khish.png) no-repeat center center/cover;
+}
+.grid-container .item3{
+  background: url(../images/item3.png) no-repeat bottom center/cover;
+}
+.grid-container .item4{
+  background: url(../images/item4.png) no-repeat center center/cover;
+}
+.grid-container .item5{
+  background: url(../images/itemj.png) no-repeat center center/cover;
+}
+.grid-container .item6{
+  background: url(../images/item4.png) no-repeat center center/cover;
+}
+.grid-container .item7{
+  background: url(../images/conntact-cover.png) no-repeat center center/cover;
+}
+.grid-container .item8{
+  background: url(../images/item8.png) no-repeat center center/cover;
+}
+.grid-container .item9{
+  background: url(../images/azadi.png) no-repeat center center/cover;
+}
+.grid-container .item10{
+  background: url(../images/item10.png) no-repeat center center/cover;
+}
+/*item10*/
+.part10{
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+.part10 .telephon{
+  display: flex;
+  margin-right: 2rem;
+}
+.part10 .addres{
+  display: flex;
+}
+.part10 .telephon i, .part10 .telephon p{
+  font-size: small;
+  color: rgba(118, 118, 168, 0.548);
+}
+.part10 .addres i, .part10 .addres p{
+  font-size: small;
+  color: rgba(118, 118, 168, 0.548);
+}
+/*footer*/
+.item11{
+    background-color: #14222d;
+  
+  }
+  .part11 .logo{
+    margin: 0 auto;
+    left: 50%;
+    width: 7rem;
+    height: 4rem;
+    background: url(../images/logo-footer.png)no-repeat center center/cover;
+  }
+  .part11 p{
+    font-size: medium;
+    text-align: center;
+    padding: 2rem;
+    color: rgba(245, 245, 245, 0.514);
+  }
+  .footer-logo{
+    display: flex;
+    justify-content: center;
+  }
+  .footer-logo .log{
+    width: 4rem;
+    height: 4rem;
+    margin: 1rem;
+  }
+  .footer-logo .right-logo{
+    background: url(../images/1367570259_cultural-heritage-logo-5.png) no-repeat center center/cover;
+  }
+  .footer-logo .mid-logo{
+    background: url(../images/midlogo.png) no-repeat center center/cover;
+  }
+  .footer-logo .left-logo{
+    background: url(../images/Background.png) no-repeat center top/cover;
+  }
+  .footer-icon{
+    display: flex;
+    justify-content: center;
+  }
+  .footer-icon .last-part{
+    color: rgba(245, 245, 245, 0.514);
+    margin: 1rem;
+  }
+  /*risponsive*/
+  @media(max-width:600px){
+  #search-form{
+    flex-wrap: wrap;
+  }
+  #search-form div{
+    width: 100%;
+    padding: 1rem;
+  }
+  .grid-container{
+    display: grid;
+    grid-template-areas:
+      'a b'
+      'c c'
+      'd e'
+      'j j'
+      'f h'
+      'l i';
+    grid-gap: 10px;
+    padding: 10px;
+  }
+  /*part10*/
+  .part10{
+    flex-wrap: wrap;
+  }
+  .part10 .telephon, .part10 .addres{
+    width: 100%;
+  }
+  .part10 .addres{
+    margin-top: 1rem;
+    margin-right: 2rem;
+  }
+}

@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  @font-face {
+    font-family: Yekan;
+    src: url("../fonts/BYekan.ttf") format("ttf");
+    src: url("../fonts/BYekan.woff") format("woff");
+    src: url("../fonts/BYekan.woff2") format("woff2");
+    font-weight: normal;
+}
+  body{
+      margin: 0;
+      background-color: whitesmoke;
+      font-family: 'Vazir', Arial, sans-serif;
+      font-weight:normal;
+  }
+  
+  .grid-container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem;
+    position: relative;
+  } 
+  /*header*/
+.myheader{
+    display: flex;
+    justify-self: start;
+    position: relative;
+}
+.logo  img{
+    position: absolute;
+    top: -9px;
+    right: 1%;
+}
+.parent{
+  display: flex;
+  justify-content: left;
+  align-content: center;
+}
+.menu-toggler, .icon{
+    padding: 0.5rem;
+    color: rgb(182, 175, 175);
+    font-size: medium;
+}
+.menu{
+  display: flex;
+  justify-content: right;
+  align-content: center;
+  position: absolute;
+  right: 20%;
+  list-style: none;
+}
+.menu li{
+  color:rgb(182, 175, 175);
+  text-decoration: none;
+  list-style: none;
+  padding: 0 0.2rem;
+  margin-left: 1rem;
+}
+a{
+  text-decoration: none;
+}
+/*main*/
+.mymain{
+  width: 100%;;
+}
+.mysearch{
+  width: 100%;
+  background-color: #fbffff;
+padding: 2rem;
+}
+#search-form{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#search-form .btn3{
+  background-color: #39b8c0;
+  padding: 0.5rem;
+  border-radius: 2rem;
+  border: none;
+
+}
+/*rows*/
+/*row1*/
+.row1{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+}
+.row1 .row11 h2, .row1 .row13{
+  color: #39b8c0;
+  font-size: medium;
+}
+.row1 .row12{
+  font-size: medium;
+  color: gray;
+}
+/*row2*/
+.row2{
+  display: flex;
+  justify-content: space-evenly;
+  direction: rtl;
+  padding: 1rem;
+}
+.row2 .row21{
+  width: 70%;
+  border-radius: 1rem;
+  margin-left: 2rem;
+  background-color: white;
+}
+.row2 .row21 p{
+  padding: 1rem;
+  direction: rtl;
+  color: gray;
+}
+.row2 .row21 .pic-veblog{
+  padding: 1rem;
+  height: 12rem;
+  background: url(../images/veblog.png)no-repeat center center/cover;
+}
+.row2 .row22{
+  width: 30%;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.row2 .row22 li{
+  padding: 0.5rem;
+  font-size: small;
+  color: gray;
+}
+.myveb{
+  direction: rtl;
+  display: flex;
+  justify-content: space-between;
+}
+.myveb .icons i{
+  margin-top: 1rem;
+  padding: 0.2rem;
+  color: gray;
+}
+/*item10*/
+.part10{
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+.part10 .telephon{
+  display: flex;
+  margin-right: 2rem;
+}
+.part10 .addres{
+  display: flex;
+}
+.part10 .telephon i, .part10 .telephon p{
+  font-size: small;
+  color: rgba(118, 118, 168, 0.548);
+}
+.part10 .addres i, .part10 .addres p{
+  font-size: small;
+  color: rgba(118, 118, 168, 0.548);
+}
+/*footer*/
+.item11{
+    background-color: #14222d;
+  
+  }
+  .part11 .logo{
+    margin: 0 auto;
+    left: 50%;
+    width: 7rem;
+    height: 4rem;
+    background: url(../images/logo-footer.png)no-repeat center center/cover;
+  }
+  .part11 p{
+    font-size: medium;
+    text-align: center;
+    padding: 2rem;
+    color: rgba(245, 245, 245, 0.514);
+  }
+  .footer-logo{
+    display: flex;
+    justify-content: center;
+  }
+  .footer-logo .log{
+    width: 4rem;
+    height: 4rem;
+    margin: 1rem;
+  }
+  .footer-logo .right-logo{
+    background: url(../images/1367570259_cultural-heritage-logo-5.png) no-repeat center center/cover;
+  }
+  .footer-logo .mid-logo{
+    background: url(../images/midlogo.png) no-repeat center center/cover;
+  }
+  .footer-logo .left-logo{
+    background: url(../images/Background.png) no-repeat center top/cover;
+  }
+  .footer-icon{
+    display: flex;
+    justify-content: center;
+  }
+  .footer-icon .last-part{
+    color: rgba(245, 245, 245, 0.514);
+    margin: 1rem;
+  }
+  /*risponsive*/
+  @media(max-width:600px){
+    .row2{
+      flex-wrap: wrap;
+    }
+    .row2 .row21{
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+    .row2 .row22{
+      width: 90%;
+    }
+    /*part10*/
+  .part10{
+    flex-wrap: wrap;
+  }
+  .part10 .telephon, .part10 .addres{
+    width: 100%;
+  }
+  .part10 .addres{
+    margin-top: 1rem;
+    margin-right: 2rem;
+  }
+  }
